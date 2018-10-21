@@ -1,0 +1,56 @@
+public class Empleado {
+	private String nombre;
+	private String apellido;
+	private int dni;
+	private char sexo;
+public Empleado(){
+	
+}
+public Empleado(String nombre, String apellido, int dni, char sexo){
+	this.apellido=apellido;
+	this.nombre=nombre;
+	this.dni=dni;
+	this.sexo=sexo;
+	}	
+public String msexo(){
+	if (sexo=='m')
+		return "masculino";
+	else
+		return "femenino";
+	
+	
+	
+}
+public void mostrarDatos(){
+	System.out.println("Nombre Completo: "+nombre+" "+apellido);
+	System.out.println("DNI: "+dni);
+	System.out.println("Sexo: "+msexo());
+	
+	
+}
+public String getNombre() {
+	return nombre;
+}
+public void setNombre(String nombre) {
+	this.nombre = nombre;
+}
+public String getApellido() {
+	return apellido;
+}
+public void setApellido(String apellido) {
+	this.apellido = apellido;
+}
+public int getDni() {
+	return dni;
+}
+public void setDni(int dni) {
+	this.dni = dni;
+}
+public char getSexo() {
+	return sexo;
+}
+public void setSexo(char sexo) {
+	this.sexo = sexo;
+}
+
+}
